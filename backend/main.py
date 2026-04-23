@@ -5,9 +5,10 @@ from models import IMCInput, IMCResult
 from calculator import calculer_imc
 
 app = FastAPI()
+
 @app.get("/")
 def home():
-    return {"status" : "IMC API en ligne "}
+    return {"status": "IMC API en ligne"}
 
 app.add_middleware(
     CORSMiddleware,
