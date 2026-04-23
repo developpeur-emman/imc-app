@@ -8,7 +8,7 @@ document.getElementById("btn-calculer").addEventListener("click", async () => {
         return;
     }
 
-    const response = await fetch("http://127.0.0.1:8000/calculer", {
+    const response = await fetch("https://imc-app-ackd.onrender.com/calculer", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ poids: poids, taille_cm: taille })
